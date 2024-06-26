@@ -1,45 +1,49 @@
-Sure, here's a `README.md` file for your project:
-
-```markdown
 # Calorie Tracker
 
-This is a simple Calorie Tracker application that allows users to add food entries, display their daily food intake summary, and clear the database upon exiting the program. The application uses the CalorieNinjas API to fetch nutritional information for various foods.
+A simple Calorie Tracker application that allows users to add food entries, display their daily food intake summary, and clear the database upon exiting the program. The application uses the CalorieNinjas API to fetch nutritional information for various foods.
 
 ## Features
 
-- Add food entries with nutritional data fetched from CalorieNinjas API
-- Display a summary of daily food intake including total calories, fat, protein, and carbohydrates
-- Clear the database when exiting the program
+- **Add Food Entries**: Add food entries with nutritional data fetched from CalorieNinjas API.
+- **Display Summary**: Display a summary of daily food intake including total calories, fat, protein, and carbohydrates.
+- **Clear Database**: Clear the database when exiting the program.
 
 ## Requirements
 
 - Python 3.x
-- Requests library
+- `requests` library
 - SQLite3
 
 ## Setup
 
 1. Clone the repository or download the source code.
 2. Install the required libraries using pip:
-
-```sh
-pip install requests
-```
-
+    ```sh
+    pip install requests
+    ```
 3. Ensure you have SQLite3 installed on your system.
 
 ## Usage
 
 1. Run the `project.py` script:
-
-```sh
-python3 project.py
-```
-
+    ```sh
+    python3 project.py
+    ```
 2. Choose an option from the menu:
-   - `1. Add Food Entry`: Add a new food entry by selecting from predefined options or entering your own food item.
-   - `2. Display Food Entries and Calorie Summary`: Display the food entries for the current day along with a summary of total calories, fat, protein, and carbohydrates.
-   - `3. Exit`: Clear the database and exit the application.
+   - **Add Food Entry**: Add a new food entry by selecting from predefined options or entering your own food item.
+   - **Display Food Entries and Calorie Summary**: Display the food entries for the current day along with a summary of total calories, fat, protein, and carbohydrates.
+   - **Exit**: Clear the database and exit the application.
+
+## Running Style Checks and Tests
+
+1. To run style checks with flake8:
+    ```sh
+    flake8
+    ```
+2. To run unit tests:
+    ```sh
+    python -m unittest discover -s tests
+    ```
 
 ## Code Structure
 
@@ -57,4 +61,3 @@ The application uses the CalorieNinjas API to fetch nutritional information. Rep
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-```
