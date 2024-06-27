@@ -5,7 +5,9 @@ from project import setup_database, fetch_nutrition_data, save_food_entry, displ
 class TestCalorieTracker(unittest.TestCase):
 
     def setUp(self):
-        self.conn = setup_database()
+        self.conn = setup_database({
+            'name': ':memory:'
+        })  # Using an in-memory database for testing
     
     def tearDown(self):
         clear_database(self.conn)

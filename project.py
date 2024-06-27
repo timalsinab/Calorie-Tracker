@@ -17,7 +17,8 @@ predefined_food_items = [
     "1 rice",
 ]
 
-def setup_database():
+def setup_database(db_config=None):
+    DB_NAME = db_config['name'] if db_config else 'calorie_tracker_db.sqlite'
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     cursor.execute('''
