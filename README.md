@@ -35,6 +35,13 @@ A simple Calorie Tracker application that allows users to add food entries, disp
    - **Exit**: Clear the database and exit the application.
 
 ## Running Style Checks and Tests
+-Before running style checks and tests, ensure you have the required packages installed.
+ ```sh
+ pip install flake8
+ ```
+ ```sh
+ pip install coverage
+ ```
 
 1. To run style checks with flake8:
     ```sh
@@ -43,6 +50,18 @@ A simple Calorie Tracker application that allows users to add food entries, disp
 2. To run unit tests:
     ```sh
     python -m unittest discover -s tests
+    ```
+3. To run unit tests with coverage:
+    ```sh
+    coverage run -m unittest discover -s tests
+    ```
+4. To generate a coverage report:
+    ```sh
+    coverage report
+    ```
+5. To generate an HTML coverage report
+    ```sh
+    coverage html
     ```
 
 ## Code Structure
